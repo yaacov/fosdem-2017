@@ -22,6 +22,8 @@ fosdem-2017 IoT room "Does your coffee machine speak bucce"
 
 ## the data-store
 - http://www.hawkular.org/
+- https://github.com/hawkular/hawkular-client-python
+- https://github.com/yaacov/mohawk
 
 ## the visualizer
 - http://grafana.org/
