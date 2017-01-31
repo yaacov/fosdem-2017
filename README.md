@@ -9,6 +9,7 @@ fosdem-2017 IoT room "Does your coffee machine speak bucce"
 ## the modbus protocol
 - https://en.wikipedia.org/wiki/Modbus
 - https://github.com/yaacov/node-modbus-serial
+- https://www.npmjs.com/package/node-red-contrib-modbus
 - https://github.com/bashwork/pymodbus
 
 ## the sensor
