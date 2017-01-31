@@ -17,6 +17,7 @@ fosdem-2017 IoT room "Does your coffee machine speak bucce"
 ## the collector
 - https://github.com/yaacov/node-modbus-cli
 - https://github.com/yaacov/hawkular-client-cli
+- https://github.com/yaacov/fosdem-2017/blob/master/scripts/collector_sensor.sh
 
 ## the data-store
 - http://www.hawkular.org/
