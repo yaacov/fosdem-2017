@@ -12,4 +12,4 @@
 #       	use TLS server (default "true")
 
 # run mohawk with sqlite backend
-mohawk -backend sqlite -port 8080 -tls false 2> ./server.log
+mohawk -backend sqlite -port 8080 -tls false 2> /dev/null
