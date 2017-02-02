@@ -6,7 +6,7 @@ keys=(volt1 volt2 volt3 volt12 volt23 volt31 current1 current2 current3)
 
 n=0
 while [[ $n -lt 9 ]]; do
-  values="${values} ${keys[$n]}=${readings[$n]}0"
+  values="${values} ${keys[$n]}=${readings[$n]}"
   n=$(($n+1))
 done
 
