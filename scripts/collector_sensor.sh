@@ -1,7 +1,8 @@
 #!/bin/bash
 
 hawkular_cli="hawkular-client-cli -U http://localhost:8080 -T t -t ops"
-readings=($(timeout 5s modbus-cli readi -u modbus.local -a 0 -l 3))
+readings=($(timeout 5s modbus-cli readi -u 10.201.132.40 -a 0 -l 3))
+#readings=($(timeout 5s modbus-cli readi -u modbus.local -a 0 -l 3))
 keys=(temp humidity dew-point)
 
 n=0
@@ -12,5 +13,11 @@ while [[ $n -lt 3 ]]; do
 done
 
 echo $values
+
+if [[ $values == *"= "* ]]; then
+  echo "Bad readings"
+  exit
+fi
+
 $hawkular_cli $values
 

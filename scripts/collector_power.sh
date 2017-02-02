@@ -11,5 +11,11 @@ while [[ $n -lt 9 ]]; do
 done
 
 echo $values
+
+if [[ $values == *"= "* ]]; then
+  echo "Bad readings"
+  exit
+fi
+
 $hawkular_cli $values
 
