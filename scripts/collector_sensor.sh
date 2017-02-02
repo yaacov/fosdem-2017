@@ -19,7 +19,7 @@ done
 
 echo $values
 
-if [[ $values == *"= "* ]]; then
+if [[ $values == *"=0 "* ]]; then
   echo "Bad readings"
   exit
 fi
