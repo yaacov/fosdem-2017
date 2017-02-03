@@ -17,12 +17,18 @@ while [[ $n -lt 3 ]]; do
   n=$(($n+1))
 done
 
-echo $values
 
-if [[ $values == *"=0 "* ]]; then
-  echo "Bad readings"
+if [[ $values == *"= "* ]]; then
+  echo "No readings"
   exit
 fi
 
+if [[ $values == *"=0 "* ]]; then
+  echo "Zero readings"
+  exit
+fi
+
+echo $values
 $hawkular_cli $values
+
 
